@@ -1,0 +1,42 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label>Username:</label>
+      <input type="text" id="username" required>
+      <label>Password:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginMessage"></p>
+  </div>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const msg = document.getElementById('loginMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+
+      // Demo credentials
+      if (user === "ashmita" && pass === "ashmita12345") {
+        msg.style.color = "green";
+        msg.textContent = "Login successful!";
+        window.location.href = "index.html"; // redirect
+      } else {
+        msg.style.color = "red";
+        msg.textContent = "Invalid username or password."; 
+      }
+    });
+  </script>
+</body>
+</html>

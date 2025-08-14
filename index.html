@@ -2,84 +2,226 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glowrious</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <h1>Hi, I am Pig</h1>
-    <img src="./HyPig.jpeg" alt=""> <br>
-    <p> Your one-stop page to know more about me and my varieties.</p>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#Features">Features</a></li>
-            <li><a href="#Season">Season</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">Glowrious</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="#contact" class="contact-link">Contact Us</a></li>
+      </ul>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-    <img src="./pigfarm.jpeg" width="300" height="250"> <br>
-    <p>Hello, I am Ashmita Tamang, a passionate pig with a love for creating beautiful and functional websites. I have
-        been
-        working in the web development industry for over 5 years, and I am always eager to learn new technologies and
-        improve my features.</p>
-    </section>
-    <h2>My family and friends</h2>
-    <table border="1">
-        <tr>
-            <th><b> Photo</b></th>
-            <th><b> Name</b></th>
-            <th><b>Description</b></th>
-        </tr>
-        <tr>
-            <td> <img src="./papapig.png" alt=""></td>
-            <td>Papa Pig</td>
-            <td>My father, a hardworking and dedicated person who loves to spend time with the family</td>
-        </tr>
-        <tr>
-            <td> <img src="./mamapig.png" alt="">
-            </td>
-            <td>Mama Pig</td>
-            <td>My mother, a loving and caring individual who always knows how to brighten up the day.</td>
-        </tr>
-        <tr>
-            <td><img src="./cartoonpig.jpeg" alt=""></td>
-            <td>Cartoon Pig</td>
-            <td>My best cartoon, always love to watch.</td>
-        </tr>
-        <tr>
-            <td><img src="./friend.jpeg" alt=""></td>
-            <td>Friend</td>
-            <td>We are friend since childhood</td>
-        </tr>
-        <tr>
-            <td><img src="./pork2.jpeg" alt=""></td>
-            <td>Dish of pig</td>
-            <td>Nowadays, I am the most popular non-veg.</td>
-        </tr>
-    </table>
-    <section id="#Features">
-        <h2>My Features</h2>
-        <p>Here are some of the features I have acquired over the years</p>
-        <li>Body Shape: Pigs have a stout, bulky body with short legs. </li>
-            <li>Skin: Their skin is thick and covered with a coat of stiff bristles, which can vary in color among different breeds. </li>
-           <li> Snout: They have a long snout with a flat, rounded disk at the end, which they use to root and search for food</li>
-            <li>Senses: Pigs have a good sense of smell and hearing, but their eyesight is poor. </li>
-            <li>Hooves: Their hooves are cloven, meaning they are split into two. </li>
-            <li>Tusks: Wild pigs have sharp tusks used for digging and defense, while domestic pigs have tusklike teeth. </li>
-            <li>Size: Domestic pigs can weigh up to 700 pounds, while wild boars are smaller.</li>
-            <h2>Pig Species</h2> 
-            <table border="1">
-                <th><b></b></th>
-                <th><b></b></th>
-            </table>
-    </section>
+    <div class="hero-section">
+      <div class="title">
+        <h3>Glowrious Moments</h3>
+        <h2>Rich in Warmth</h2>
+      </div>
+      <div class="tagline">
+        <p>Luxury hand-poured candles with natural aroma</p>
+      </div>
 
+      <div class="button">
+        <a href="product.html">
+          <button type="button">Explore more</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--Best Sellers-->
+
+  <div class="best-seller">
+    <h2 class="best-title">Best Seller Bliss</h2>
+    <p class="best-subtitle">
+      Our community’s top choice — where warmth, elegance, and calm meet.
+    </p>
+
+    <!--Top best sellers grid-->
+
+    <div class="product-container">
+      <div class="product">
+        <img src="assets/candle-1.jpeg" alt="sandalwood-candle" />
+        <div class="hover-description">
+          <p class="desc">
+            Relaxing sandalwood fragrance in a hand-poured soy candle, perfect
+            for calming your space.
+          </p>
+          <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="assets/candle-3.jpeg" alt="LavenderCalm-candle" />
+        <div class="hover-description">
+          <p class="desc">
+            A soothing lavender scent, designed to bring tranquility and
+            relaxation.
+          </p>
+          <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="assets/candle-4.png" alt="Vanilla-candle" />
+        <div class="hover-description">
+          <p class="desc">
+            Warm vanilla fragrance in a hand-poured soy candle, perfect for
+            cozy moments.
+          </p>
+          <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="assets/candle-5.png" alt="Jasmine-candle" />
+        <div class="hover-description">
+          <p class="desc">
+            A delicate jasmine scent in a beautifully crafted hand-poured soy
+            candle.
+          </p>
+          <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+  <section class="about-section" id="about-us">
+    <div class="about-container">
+      <div class="about-content">
+        <h2 class="about-title">Crafting Luminary Moments</h2>
+        <p class="about-subtitle">Where Passion Meets Fragrance</p>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              At Glowrious, we believe in the transformative power of light
+              and scent. Our journey began in 2018 with a simple mission: to
+              create candles that don't just illuminate spaces, but elevate
+              experiences.
+            </p>
+
+            <p>
+              Each candle is meticulously hand-poured by our master artisans
+              using sustainable soy wax and premium essential oils. We source
+              our ingredients ethically, ensuring every flicker supports local
+              communities and preserves traditional craftsmanship.
+            </p>
+
+            <p>
+              From our studio in the Himalayan foothills to your sacred space,
+              we infuse every creation with mindfulness and intention.
+              Discover the glow that transforms ordinary moments into
+              extraordinary memories.
+            </p>
+          </div>
+
+          <div class="about-image">
+            <img src="assets/about-us.png" alt="Candle Making Process" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close-btn">&times;</span>
+      <div class="contact-header">
+        <h2>Get In Touch</h2>
+        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your full name">
+          <div id="nameError" class="error-message">Please enter your name</div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email">
+          <div id="emailError" class="error-message">Please enter a valid email address</div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" class="form-control" placeholder="What is this regarding?">
+          <div id="subjectError" class="error-message">Please enter a subject</div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" class="form-control" placeholder="Write your message here..."></textarea>
+          <div id="messageError" class="error-message">Please enter your message</div>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+        <div id="successMessage" class="success-message">
+          <i class="fas fa-check-circle"></i> Your message has been sent successfully!
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!--footer-->
+  <footer class="glowrious-footer">
+    <div class="col column-one">
+      <img class="logo" src="assets/logo.png" />
+      <div class="info">
+        <h4 class="contact-head">Contact</h4>
+        <p>
+          <strong>Address:</strong> Patan Durbar Square, Lalitpur 44700, Nepal
+        </p>
+        <p><strong>Phone:</strong> +977-1-5541234 / +977-9801234567</p>
+        <p><strong>Hours:</strong> 10:00 AM – 6:00 PM, Sunday – Friday</p>
+
+        <div class="socials">
+          <h4>Follow us</h4>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col column-two">
+      <h4>About us</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col column-three">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track my Order</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2025 Glowrious. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="product.js"></script>
 </body>
 
 </html>
